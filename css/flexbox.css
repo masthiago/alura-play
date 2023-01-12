@@ -1,3 +1,5 @@
+/* Cabeçalho */
+
 .cabecalho__container {
     display: flex;
     align-items: center;
@@ -6,14 +8,43 @@
     top: 0;
 }
 
+/* Sessão superior */
+
+.superior__secao__container {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow-x: scroll;
+    gap: 15px;
+}
+
 .cabecalho__pesquisar__item {
     display: none;
 }
 
+
+/* Rodapé */
+
+.rodape__container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/* Telas a partir de telas médias */
 @media screen and (min-width: 834px) {
     
+
+    /* Cabeçalho */
+
     .cabecalho__pesquisar__item {
         display: block;
+    }
+
+
+    /* Rodapé */
+
+    .rodape__container {
+        justify-content: space-between;
     }
 
 }
