@@ -81,6 +81,7 @@
         top: 80px;
         height: 100%;
         width: 82px;
+        overflow-y: scroll;
     }
 
     .menu__lista {
@@ -95,6 +96,57 @@
 
     .rodape__container {
         justify-content: space-between;
+    }
+
+}
+
+
+@media screen and (min-width: 1440px) {
+
+    .menu__container {
+        width: 247px;
+    }
+
+    .menu__lista {
+        display: flex;
+        height: auto;
+        gap: 1rem;
+        padding: .45rem;
+    }
+
+    .menu__lista:nth-child(1),
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4) {
+        display: flex;
+    } 
+
+
+    .menu__lista:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+
+    .menu__itens {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: .25rem;
+    }
+
+    .jogos {
+        order: 3;
+    }
+
+    .filmes {
+        order: 2;
+    }
+
+    .premium {
+        order: 1
+    }
+
+    .maispagina {
+        order: 4;
     }
 
 }
